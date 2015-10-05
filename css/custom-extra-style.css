@@ -1,0 +1,22 @@
+#section-download
+{
+	background-color: #feb600 !important;
+}
+
+#primary-menu > ul > li:hover a,
+#primary-menu > ul > li.current a { color: #feb600 !important; }
+
+#primary-menu > ul > li:hover a {
+	color:#e46463 !important;
+}
+
+#primary-menu ul li a {
+	
+	color: #feb600;
+
+}
+
+
+#iconos-social-network .social-icon { 
+color: #e46463;
+}
