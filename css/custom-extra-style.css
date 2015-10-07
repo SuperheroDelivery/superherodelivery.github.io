@@ -1,22 +1,37 @@
-#section-download
+.circle-font {
+	font-weight: bold;
+}
+
+#zipcode-input 
 {
-	background-color: #feb600 !important;
+	color: #fff;
+}
+
+#header.sticky-header #header-wrap {
+	
+	background-color: #515151;
+}
+	
+#primary-menu ul li a {
+    
+    color: #fff;
+    
+}
+
+
+#top-search a,
+#top-cart a,
+#side-panel-trigger a {
+	
+	color: #fff;
+	
 }
 
 #primary-menu > ul > li:hover a,
-#primary-menu > ul > li.current a { color: #feb600 !important; }
+#primary-menu > ul > li.current a { color: #ffbd00; }
 
-#primary-menu > ul > li:hover a {
-	color:#e46463 !important;
+#section-download
+{
+	background-color: #ffb320;
 }
 
-#primary-menu ul li a {
-	
-	color: #feb600;
-
-}
-
-
-#iconos-social-network .social-icon { 
-color: #e46463;
-}
