@@ -11,6 +11,23 @@
 	
 	background-color: #515151;
 }
+
+/*change the menu bar in the other pages  */
+#header .second-wrap {
+		background-color: #515151 !important;
+	-webkit-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+	-o-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+	transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+}
+
+#slider .section {
+	position: relative;
+	margin: 60px 0;
+	padding: 60px 0;
+	background: url(/images/background-1.jpg) 60% 60%;
+	overflow: hidden;
+}
+
 	
 #primary-menu ul li a {
     
@@ -32,6 +49,9 @@
 
 #section-download
 {
-	background-color: #ffb320;
+	background-color: #ffb320 !important;
 }
+
+
+
 
