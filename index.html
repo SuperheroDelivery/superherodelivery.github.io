@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="en-US" ng-app="superheroApp">
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -35,9 +35,14 @@
 	<script type="text/javascript" src="../js/jquery.js"></script>
 	<script type="text/javascript" src="../js/plugins.js"></script>
 
+	<!-- Angularjs
+		============================================-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+
 	<!-- Document Title
 	============================================= -->
-	<title>One Page with Subscription Form | Canvas</title>
+	<title>SUPERHERO DELIVERY</title>
 
 </head>
 
@@ -122,7 +127,7 @@
 
 	<!-- Document Wrapper
 	============================================= -->
-	<div id="wrapper" class="clearfix">
+	<div id="wrapper" class="clearfix" >
 
 		<!-- Header
 		============================================= -->
@@ -168,7 +173,7 @@
 		============================================= -->
 		<section id="slider" class="full-screen dark" style="height: 477px; background: url(/images/backgroundsuperhero.jpg) 50% 50%;">
 
-			<div class="container clearfix vertical-middle" style="position: absolute; top: 50%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -242.5px;">
+			<div class="container clearfix vertical-middle" style="position: absolute; top: 50%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -242.5px;" ng-controller="formCode">
 
 				<!--div class="heading-block title-center nobottomborder">
 					<h1>We are currently Under Construction</h1>
@@ -186,10 +191,10 @@
 				<div class="divider divider-center divider-short divider-margin"><i class="icon-star"></i></div>
 
 				<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
-				<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin" novalidate="novalidate">
+				<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin" novalidate="novalidate" ng-submit="goToRestaurants()">
 					<div class="input-group input-group-lg divcenter" style="max-width:600px;">
 						<span class="input-group-addon"><i class="icon-email2"></i></span>
-						<input type="text" name="widget-subscribe-form-email" id="zipcode-input" class="form-control" placeholder="Enter your post code" aria-required="true">
+						<input type="text" name="widget-subscribe-form-email" ng-model="zipcode" id="zipcode-input" class="form-control" placeholder="Enter your post code" aria-required="true">
 						<span class="input-group-btn">
 							<button class="btn btn-warning" type="submit">Find</button>
 						</span>
@@ -851,6 +856,10 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="../js/functions.js"></script>
+	<!--angular
+	============================================-->
+	<script src="../js/app/app.js"></script>
+	<script src="../js/app/controllers/indexControllers.js"></script>
 
 </body>
 </html>

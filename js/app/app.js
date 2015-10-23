@@ -1,0 +1,1 @@
+var superheroApp = angular.module('superheroApp', []);
