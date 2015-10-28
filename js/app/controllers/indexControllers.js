@@ -4,16 +4,17 @@ superheroApp.controller('formCode', ['$scope',  '$http',
 
           $scope.goToRestaurants = function ()
           {
-            window.location.replace("http://superherodelivery/restaurants.html");
-                 /*$http({
+            //window.location.replace("http://superherodelivery/restaurants.html");
+                 $http({
                     method: 'GET',
-                    url: 'http://188.166.116.179/restaurants?country=IS&postal_code=101'
+                    url: 'http://188.166.116.179/restaurants?country=IS&postal_code='+$scope.zipcode
                     }).then(function successCallback(response) {
                         console.log(response);
+                        window.location.replace("http://superherodelivery.github.io/restaurants.html?country=IS&postal_code="+$scope.zipcode);
                     }, function errorCallback(response) {
-                    // called asynchronously if an error occurs
-                    // or server returns response with an error status.
-                });*/
+                        console.log(response);
+                        swal({   title: "Error!",   text: response.data,   type: "error",   confirmButtonText: "Try another" });
+                });
           }
 
 
