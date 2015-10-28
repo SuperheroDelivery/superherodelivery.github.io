@@ -28,6 +28,12 @@
 	overflow: hidden;
 }
 
+.button.button-border.button-light {
+	border-color: #fff;
+	color: #F9F9F9;
+	
+}
+
 	
 #primary-menu ul li a {
     

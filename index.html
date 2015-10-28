@@ -154,9 +154,9 @@
 
 						<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
 							<li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
-							<li><a href="#" data-href="#section-download"><div>Download</div></a></li>
+							<li><a href="#" data-href="#section-download"><div>App</div></a></li>
 							<li><a href="#" data-href="#section-about"><div>About</div></a></li>
-							<li><a href="#" data-href="#section-services"><div>Services</div></a></li>
+							<!--li><a href="#" data-href="#section-services"><div>Services</div></a></li-->
 							<!--li><a href="#" data-href="#section-blog"><div>Blog</div></a></li-->
 							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
 						</ul>
@@ -173,42 +173,35 @@
 
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="full-screen dark" style="height: 477px; background: url(/images/backgroundsuperhero.jpg) 50% 50%;">
+		<section id="slider" class="slider-parallax full-screen">
 
-			<div class="container clearfix vertical-middle" style="position: absolute; top: 50%; width: 100%; padding-top: 0px; padding-bottom: 0px; margin-top: -242.5px;" ng-controller="formCode">
+			<div class="full-screen dark section nopadding nomargin noborder ohidden" style="background-image: url('images/bg-1.jpg'); background-size: cover; background-position: center center;">
 
-				<!--div class="heading-block title-center nobottomborder">
-					<h1>We are currently Under Construction</h1>
-					<span>Please check back again within Some Days as We're Pretty Close</span>
-				</div-->
-				<div class="heading-block title-center nobottomborder">
-				<div class="col-sm-4"></div>
-				<div data-animate="fadeInLeft" class="col-sm-4">
-					<img src="/images/superhero.png" style="margin-left: 100px" class="img-responsive img-circle" width="300" height="300" alt="Responsive image">
-				</div>
-				<div class="col-sm-4"></div>
-				</div>
-				<div data-animate="pulse" id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin is-countdown" style="max-width:700px;"><span class="countdown-row countdown-show3"><span class="countdown-section"><span class="countdown-amount"><i class="icon-line2-note"></i></span><span class="countdown-period circle-font">PLACE ORDER</span></span><span class="countdown-section circle-font"><span class="countdown-amount"><i class="icon-et-speedometer"></i></span><span class="countdown-period">HERO ON THE WAY</span></span><span class="countdown-section"><span class="countdown-amount"><i class="icon-food"></i></span><span class="countdown-period circle-font">EAT IT, EAT IT</span></span></span></div>
-
-				<div class="divider divider-center divider-short divider-margin"><i class="icon-star"></i></div>
-
-				<div id="widget-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
-				<form id="widget-subscribe-form" action="include/subscribe.php" role="form" method="post" class="nobottommargin" novalidate="novalidate" ng-submit="goToRestaurants()">
-					<div class="input-group input-group-lg divcenter" style="max-width:600px;">
-						<span class="input-group-addon"><i class="icon-email2"></i></span>
-						<input type="text" name="widget-subscribe-form-email" ng-model="zipcode" id="zipcode-input" class="form-control" placeholder="Enter your post code" aria-required="true">
-						<span class="input-group-btn">
-							<button class="btn btn-warning" type="submit">Find</button>
-						</span>
+				<div class="container center">
+					<div class="vertical-middle">
+						<img src="/images/logo@3x.png" style="margin: auto" class="img-responsive" width="20%" height="20%" alt="Responsive image">
+						<div class="heading-block nobottomborder bottommargin-sm" style="margin-top: 20px">
+							<h1>Delivering your favorite food</h1>
+							<span style="font-size:20px;" class="notopmargin">From your favoirte restaurant</span>
+						</div>
+						<div id="slider-subscribe-form-result" data-notify-type="success" data-notify-msg=""></div>
+						<form id="slider-subscribe-form"  ng-controller="formCode" ng-submit="goToRestaurants()" class="nobottommargin divcenter" style="max-width: 500px;">
+							<input type="text" ng-model="zipcode" name="widget-subscribe-form-email" class="form-control input-lg not-dark bottommargin-sm required" placeholder="Enter your zipcode">
+							<button type="submit" class="button button-border button-light button-circle" value="submit">Search</button>
+						</form>
+						
 					</div>
-				</form>
+				</div>
+
+				<!--div class="video-wrap">
+					<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+				</div-->
 
 				
 
 			</div>
 
-		</section>
-
+		</section><!-- #slider end -->
 		<!-- Content
 		============================================= -->
 		<section id="content">
@@ -221,18 +214,18 @@
 
 						<div class="col_half nobottommargin topmargin-lg">
 
-							<img src="images/appshowcase/iphone-solid.png" alt="Image" class="center-block">
+							<img src="images/appshowcase/phone.png" alt="Image" class="center-block">
 
 						</div>
 
 						<div class="col_half nobottommargin topmargin-lg col_last">
 
 							<div class="heading-block topmargin-lg">
-								<h2>AWESOME SCALABLE APPS</h2>
-								<span>Our App scales beautifully to different Devices.</span>
+								<h2>YES, WE HAVE AN APP!</h2>
+								<span style="font-size: 24px;">Download it for free and order on the go!</span>
 							</div>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cumque, perferendis accusamus porro illo exercitationem molestias, inventore obcaecati ut omnis voluptatibus ratione odio amet magnam quidem tempore necessitatibus quaerat, voluptates excepturi voluptatem, veritatis qui temporibus.</p>
+							<p style="font-size: 20px">With our app, you can search for your favorite restaurants and find the ones that are nearest to your location. We want you to be able to place your order in the most convenient way possible – now you can do it on the go!</p>
 
 							<a href="#" class="button button-border button-rounded button-large button-dark noleftmargin">Download</a>
 
@@ -397,7 +390,7 @@
 
 					</div>
 					
-				<div id="section-services" class="page-section notoppadding">
+				<!--div id="section-services" class="page-section notoppadding">
 
 					<div class="section nomargin">
 						<div class="container clearfix">
@@ -465,7 +458,7 @@
 							</div>
 						</div>
 
-					</div>
+					</div-->
 
 					
 				<!--div id="section-blog" class="page-section">
