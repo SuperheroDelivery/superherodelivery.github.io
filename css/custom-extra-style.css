@@ -28,6 +28,14 @@
 	overflow: hidden;
 }
 
+/* ----------------------------------------------------------------------------
+	Page Section
+---------------------------------------------------------------------------- */
+
+.page-section { padding-bottom: 0px !important; }
+
+
+
 .button.button-border.button-light {
 	border-color: #fff;
 	color: #F9F9F9;
@@ -56,6 +64,12 @@
 #section-download
 {
 	background-color: #ffb320 !important;
+}
+
+.color-yellow-button .button {
+	
+	background-color: #ffb320 !important;
+	
 }
 
 

@@ -29,8 +29,8 @@
         <script type="text/javascript" src="../js/plugins.js"></script>
 
         <!-- Angularjs
-        ============================================-->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+		============================================-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
         <!-- Document Title
         ============================================= -->
         <title>SUPERHERO DELIVERY</title>
@@ -133,9 +133,9 @@
                                     <div class="emphasis-title">
                                         <!--span class="before-heading opm-medium t300 uppercase font-primary">We are</span-->
                                         <h1>
-                                        <!--span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
+                                        <span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
                                         <span class="t-rotate t700 font-body opm-medium-word" style="color:#fff; margin-left: 200px">PLACE ORDER.|HERO ON THE WAY.|EAT IT, EAT IT.</span>
-                                        </span-->
+                                        </span>
                                         </h1>
 
                                     </div>
@@ -143,128 +143,83 @@
                                 </div>
                             </div>
                             </section><!-- #slider end -->
-
                             <!-- Content
                             ============================================= -->
-                            <section id="content" ng-controller="getProducts">
-
+                            <section id="content">
                                 <div class="content-wrap nopadding">
                                     <div id="section-about" class="center page-section">
-                                        <div class="container clearfix">
-                                        <!--div class="promo promo-full promo-border header-stick bottommargin-lg">
-                    <div class="container clearfix">
-                        <h3>Call us today at <span>+91.22.57412541</span> or Email us at <span>support@canvas.com</span></h3>
-                        <span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
-                        
-                    </div>
-                </div-->
+                                    <div class="container clearfix">
 
-                    <div class="table-responsive bottommargin">
+                    <!-- Sidebar
+                    ============================================= -->
+                    <div class="sidebar nobottommargin clearfix">
+                        <div class="sidebar-widgets-wrap">
 
-                        <table class="table cart">
-                            <thead>
-                                <tr>
-                                    <th class="cart-product-remove">&nbsp;</th>
-                                    <th class="cart-product-thumbnail">&nbsp;</th>
-                                    <th class="cart-product-name">Product</th>
-                                    <th class="cart-product-price">Unit Price</th>
-                                    <th class="cart-product-quantity">Quantity</th>
-                                    <th class="cart-product-subtotal">Total</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="cart_item" ng-repeat="Product in Products">
-                                    <td class="cart-product-remove">
-                                        <a href="#" class="remove" title="Remove this item"><i class="icon-trash2"></i></a>
-                                    </td>
+                            <div class="widget clearfix">
 
-                                    <td class="cart-product-thumbnail">
-                                        <a href="#"><img width="64" height="64" src="/images/food.jpg" alt="Pink Printed Dress"></a>
-                                    </td>
+                                <h4>Recent Posts</h4>
+                                <div id="post-list-footer">
 
-                                    <td class="cart-product-name" style="font-weight: bold">
-                                        {{Product.description}}
-                                    </td>
-
-                                    <td class="cart-product-price">
-                                        <span class="amount">{{Product.price | currency:"Kr."}}</span>
-                                    </td>
-
-                                    <td class="cart-product-quantity">
-                                        <div class="quantity clearfix">
-                                            <input type="button" value="-" class="minus" ng-click="calculateQuantitySub($index,Product.price)">
-                                            <input type="text" id="quantity-{{$index}}" name="quantity-{{$index}}" value="0" class="qty">
-                                            <input type="button" value="+" class="plus" ng-click="calculateQuantityPlus($index,Product.price)">
+                                    <div class="spost clearfix">
+                                        <div class="entry-image">
+                                            <a href="#" class="nobg"><img src="http://canvashtml-cdn.semicolonweb.com/images/magazine/small/1.jpg" alt=""></a>
                                         </div>
-                                    </td>
-
-                                    <td class="cart-product-subtotal">
-                                        <span class="amount" id="amount-{{$index}}">kr. 0</span>
-                                    </td>
-                                </tr>
-               
-                      
-                                <tr class="cart_item">
-                                    <td colspan="6">
-                                        <div class="row clearfix">
-                                            <div class="col-md-4 col-xs-4 nopadding">
-                                                <div class="col-md-8 col-xs-7 nopadding">
-                                                    <input type="text" value="" class="sm-form-control" placeholder="Enter Coupon Code..">
-                                                </div>
-                                                <div class="col-md-4 col-xs-5">
-                                                    <a href="#" class="button button-3d button-black nomargin">Apply Coupon</a>
-                                                </div>
+                                        <div class="entry-c">
+                                            <div class="entry-title">
+                                                <h4><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h4>
                                             </div>
-                                            <div class="col-md-8 col-xs-8 nopadding color-yellow-button">
-                                                <a href="#" class="button button-3d nomargin fright" ng-click="clearAll()">Clear all</a>
-                                                <a href="shop.php" class="button button-3d notopmargin fright">Proceed to Checkout</a>
-                                            </div>
+                                            <ul class="entry-meta">
+                                                <li>10th July 2014</li>
+                                            </ul>
                                         </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-
-                    </div>
-
-                    <div class="row clearfix">
-                     
-
-                        <div class="col-md-12 clearfix">
-                            <div class="table-responsive">
-                                <h4>Cart Totals</h4>
-
-                                <table class="table cart">
-                                    <tbody>
-                                        <tr class="cart_item">
-                                            <td class="cart-product-name">
-                                                <strong>Cart Subtotal</strong>
-                                            </td>
-
-                                            <td class="cart-product-name">
-                                                <span id="subtotal" class="amount">{{total | currency:"Kr."}}</span>
-                                            </td>
-                                        </tr>
-                                        
-                                        <tr class="cart_item">
-                                            <td class="cart-product-name">
-                                                <strong>Total</strong>
-                                            </td>
-
-                                            <td class="cart-product-name">
-                                                <span class="amount color lead"><strong id="total">{{total | currency:"Kr."}}</strong></span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-
-                                </table>
+                                    </div>
+                               </div>
 
                             </div>
-                        </div>
-                    </div>
 
-                </div>  
+                           
+                            <div class="widget clearfix">
+
+                                <h4>Instagram Photos</h4>
+                                <div id="instagram-widget" class="instagram-photos masonry-thumbs" data-user="envato" data-count="16" data-type="user" style="margin-right: -1px; position: relative; height: 0px;"></div>
+
+                            </div>
+
+                           
+                        </div>
+                    </div><!-- .sidebar end -->
+
+                    <!-- Post Content
+                    ============================================= -->
+                    <div class="postcontent bothsidebar nobottommargin clearfix">
+
+                        <p><span class="dropcap">F</span>oster best practices effectiveness inspire breakthroughs solve immunize turmoil. Policy dialogue peaceful The Elders rural global support. Process inclusive innovate readiness, public sector complexity. Lifting people up cornerstone partner, technology working families civic engagement activist recognize potential global network. Countries tackling solution respond change-makers tackle. Assistance, giving; fight against malnutrition experience in the field lasting change scalable. Empowerment long-term, fairness policy community progress social responsibility; Cesar Chavez recognition. Expanding community ownership visionary indicator pursue these aspirations accessibility. Achieve; worldwide, life-saving initiative facilitate. New approaches, John Lennon humanitarian relief fundraise vaccine Jane Jacobs community health workers Oxfam. Our ambitions informal economies.</p>
+
+                        
+                       
+
+                    </div><!-- .postcontent end -->
+
+                    <!-- Sidebar
+                    ============================================= -->
+                    <div class="sidebar nobottommargin col_last clearfix">
+                        <div class="sidebar-widgets-wrap">
+
+                            <div class="widget widget-twitter-feed clearfix">
+
+                                <h4>Twitter Feed</h4>
+                                
+
+                            </div>
+
+                            
+                        
+                 
+
+                    </div><!-- .sidebar end -->
+
+                </div>
+                                        
                                     </div>
                                     <!-- Footer
                                     ============================================= -->
@@ -276,14 +231,14 @@
                                                         <div class="widget clearfix">
                                                             <h4>Site Links</h4>
                                                             <ul class="list-unstyled footer-site-links nobottommargin">
-                                                                <li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Home</a></li>
-                                                                <li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Download</a></li>
-                                                                <li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
-                                                                <!--li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li-->
-                                                                <li><a href="http://superherodelivery.github.io/" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
-                                                                <!--li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li-->
-                                                                <li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
-                                                            </ul>
+																<li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Home</a></li>
+																<li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Download</a></li>
+																<li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">About</a></li>
+																<!--li><a href="#" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Works</a></li-->
+																<li><a href="http://superherodelivery.github.io/" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Services</a></li>
+																<!--li><a href="#" data-scrollto="#section-blog" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Blog</a></li-->
+																<li><a href="http://superherodelivery.github.io/"  data-easing="easeInOutExpo" data-speed="1250" data-offset="70">Contact</a></li>
+															</ul>
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
@@ -353,10 +308,10 @@
                                         ============================================= -->
                                         <script type="text/javascript" src="../js/functions.js"></script>
                                         <!--angular
-                                        ============================================-->
-                                        <script src="../js/app/app.js"></script>
-                                        <script src="../js/app/service/restaurantService.js"></script>
-                                        <script src="../js/app/controllers/productsControllers.js"></script>
+										============================================-->
+										<script src="../js/app/app.js"></script>
+										<script src="../js/app/service/restaurantService.js"></script>
+										<script src="../js/app/controllers/restaurantControllers.js"></script>
 
 
                                     </body>

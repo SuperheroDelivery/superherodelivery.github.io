@@ -15,6 +15,17 @@ superheroApp.service('restaurantService', ['$http', function($http) {
             return promise;
         
 	}
+
+    this.getProducts = function(id)
+    {
+        var url = "http://api.superherodelivery.com/restaurants/"+id+"/products";
+            var promise = $http({
+                method: 'GET',
+                url: url
+               
+            });
+            return promise;   
+    }
     
 
 }]);
