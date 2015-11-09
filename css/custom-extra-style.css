@@ -28,6 +28,22 @@
 	overflow: hidden;
 }
 
+#slider .order-section {
+	position: relative;
+	margin: 60px 0;
+	padding: 60px 0;
+	background: url(/images/3.jpg) 60% 60%;
+	overflow: hidden;
+}
+
+#slider .product-section {
+	position: relative;
+	margin: 60px 0;
+	padding: 60px 0;
+	background: url(/images/3.jpg) 60% 60%;
+	overflow: hidden;
+}
+
 /* ----------------------------------------------------------------------------
 	Page Section
 ---------------------------------------------------------------------------- */
