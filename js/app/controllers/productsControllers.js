@@ -2,7 +2,7 @@ superheroApp.controller('getProducts', ['$scope',  '$http', '$location', 'restau
     function($scope, $http, $location, restaurantService) {
           
           $scope.total = 0;
-
+          products = {};
           
 
           $scope.getParameter = function(sParam)
@@ -26,6 +26,7 @@ superheroApp.controller('getProducts', ['$scope',  '$http', '$location', 'restau
            restaurantService.getProducts($scope.restaurantId).success(function(data)
            {
              $scope.Products = data;
+             
 
            });
 
@@ -64,7 +65,8 @@ superheroApp.controller('getProducts', ['$scope',  '$http', '$location', 'restau
               
                  $scope.total = 0;
            }
-            
+
+          
         
 
 

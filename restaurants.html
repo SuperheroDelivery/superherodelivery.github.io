@@ -152,8 +152,8 @@
                                             <div class="postcontent nobottommargin col_last clearfix" >
                                                 <div class="col_one_third bottommargin-lg" ng-repeat="Restaurant in Restaurants">
                                                     <div class="feature-box center media-box fbox-bg">
-                                                        <div class="fbox-media">
-                                                            <img src="/images/food.jpg" alt="Image">
+                                                        <div class="fbox-media foto">
+                                                            <img ng-src="{{Restaurant.logo_url}}"  alt="Image">
                                                         </div>
                                                         <div class="fbox-desc">
                                                             <h3>{{Restaurant.name}}<span class="subtitle">{{Restaurant.address}}</span></h3>

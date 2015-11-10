@@ -88,6 +88,23 @@
 	
 }
 
+.foto img {
+	width: 264.406px !important;
+	height: 165px !important;
+}
 
 
+/*Box in the restaurant page*/
+
+.feature-box.media-box.fbox-bg .fbox-desc {
+   
+    background-color: #ffb320;
+    border: 1px solid #E5E5E5;
+    
+}
+
+.feature-box h3 {
+    
+    color: #fff;
+}
 

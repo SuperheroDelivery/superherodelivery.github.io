@@ -1,5 +1,6 @@
 superheroApp.service('restaurantService', ['$http', function($http) {
 
+    this.getProducts;
 	this.getRestaurants = function(zipcode)
 	{
 		
@@ -26,6 +27,8 @@ superheroApp.service('restaurantService', ['$http', function($http) {
             });
             return promise;   
     }
+
+
     
 
 }]);
