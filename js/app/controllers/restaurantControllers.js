@@ -17,6 +17,11 @@ superheroApp.controller('getRestaurant', ['$scope',  '$http', '$location', 'rest
             }
           }
 
+          $scope.subscribe = function()
+          {
+            swal({   title: "Thank you!!!",   text: "You are now subscribed to our email list",   type: "success",   confirmButtonText: "return" });
+          }
+
            $scope.zipcode = $scope.getParameter('postal_code');
 
            restaurantService.getRestaurants($scope.zipcode).success(function(data)
